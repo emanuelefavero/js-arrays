@@ -21,6 +21,7 @@ console.log('2.', longNames); // [ 'Lewis', 'Carlo', 'Fabio', 'Nathan' ]
 // 3. Rimuovi 'Ed' dall'array teachers
 const edIndex = teachers.indexOf('Ed');
 if (edIndex !== -1) teachers.splice(edIndex, 1);
+// ? .indexOf restituisce -1 se l'elemento non è presente
 console.log('3.', teachers);
 // [ 'Luca', 'Lewis', 'Carlo', 'Phil', 'Fabio', 'Nathan' ]
 
@@ -43,8 +44,14 @@ console.log('Array finale:', teachers);
 SOLUZIONI ALTERNATIVE:
 // NOTE: .filter, .includes e altri metodi sono esplicitamente vietati nella consegna, ma li lascio qui come riferimento
 
-1. Reverse senza mutare l'array originale:
+1.a Reverse senza mutare l'array originale:
 const reversedTeachers = teachers.toReversed();
+
+1.b Reverse con ciclo for:
+const reversedTeachers = [];
+for (let i = teachers.length - 1; i >= 0; i--) {
+  reversedTeachers.push(teachers[i]);
+}
 
 2. Long names con filter:
 const longNames = teachers.filter((name) => name.length >= 5);
@@ -64,6 +71,13 @@ for (let i = 0; i < teachers.length; i++) {
   }
 }
 
-5 Stringa con join:
+5.a Stringa con join:
 const teachersString = teachers.join();
+
+5.b Stringa con ciclo for:
+let teachersString = '';
+for (let i = 0; i < teachers.length; i++) {
+  teachersString += teachers[i];
+  if (i < teachers.length - 1) teachersString += ',';
+}
 */
