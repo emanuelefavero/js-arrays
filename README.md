@@ -23,11 +23,8 @@ Controlla i file degli script per la soluzione:
 
 ## Decisioni Tecniche
 
-- Ho mantenuto invariati l'array `teachers` fornito e i commenti dell'esercizio.
-- Ho usato l'accesso diretto tramite indice quando la posizione era nota, per esempio `teachers[4] = 'Patrick'`.
-- Ho usato cicli `for` nel bonus per tutti gli esercizi seguendo le indicazioni di non usare metodi avanzati e fare pratica con i cicli for.
-- Ho evitato metodi come `filter`, `includes`, `join` e `toString` nelle soluzioni principali del bonus, rispettando le indicazioni dell'esercizio.
-- Ho aggiunto `console.log` con label per controllare ogni passaggio in DevTools.
+- Nel primo esercizio ho usato i metodi base degli array già introdotti nella lezione. Nel bonus ho preferito usare cicli `for` per seguire le indicazioni dell'esercizio e esercitarmi sul costrutto.
+- Ho aggiunto `console.log` con label per migliorare la leggibilità dei risultati nei DevTools.
 
 ## Riferimenti
 
