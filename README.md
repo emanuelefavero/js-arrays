@@ -1,10 +1,10 @@
 # JS Arrays
 
-> Note: This repo is in Italian
+> Nota: questa repo è in italiano.
 
 Esercizio sugli array in JavaScript dal mio corso di Web Development.
 
-## Obbiettivo
+## Obiettivo
 
 Partendo dal codice fornito, completare tutte le task richieste negli script presenti.
 
@@ -27,7 +27,8 @@ Controlla i file degli script per la soluzione:
 
 - Ho mantenuto invariati l'array `teachers` fornito e i commenti dell'esercizio.
 - Ho usato l'accesso diretto tramite indice quando la posizione era nota, per esempio `teachers[4] = 'Patrick'`.
-- Ho usato un ciclo `for` nel bonus per creare l'array `longNames`, rispettando la regola di non usare `filter` in questa fase.
+- Ho usato cicli `for` nel bonus per tutti gli esercizi seguendo le indicazioni di non usare metodi avanzati e fare pratica con i cicli for.
+- Ho evitato metodi come `filter`, `includes`, `join` e `toString` nelle soluzioni principali del bonus, rispettando le indicazioni dell'esercizio.
 - Ho aggiunto `console.log` con label per controllare ogni passaggio in DevTools.
 
 ## Riferimenti
