@@ -1,7 +1,5 @@
 # JS Arrays
 
-> Nota: questa repo è in italiano.
-
 Esercizio sugli array in JavaScript dal mio corso di Web Development.
 
 ## Obiettivo
