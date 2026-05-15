@@ -41,3 +41,45 @@ console.log('8.', isTeachersEmpty); // false
 // Array finale
 console.log('Array finale:', teachers);
 // [ 'Sarah', 'Ed', 'Fabio', 'Phil', 'Patrick', 'Lewis', 'Vanessa' ]
+
+/*
+SOLUZIONI SENZA METODI ARRAY:
+NOTE: Le soluzioni senza metodi array sono più verbose e meno efficienti rispetto a quelle con i metodi array, ma possono essere utili per comprendere meglio il funzionamento degli array e dei cicli.
+
+
+1. e 2.
+Non utilizzano metodi array
+
+3.
+const lastTeacher = teachers[teachers.length - 1];
+teachers.length = teachers.length - 1;
+
+4.
+const firstTeacher = teachers[0];
+for (let i = 0; i < teachers.length - 1; i++) {
+  teachers[i] = teachers[i + 1];
+}
+teachers.length = teachers.length - 1;
+
+5.
+teachers[teachers.length] = 'Vanessa';
+
+6.
+teachers.length = teachers.length + 1;
+for (let i = teachers.length - 1; i > 0; i--) {
+  teachers[i] = teachers[i - 1];
+}
+teachers[0] = 'Sarah';
+
+7.
+let lewisIndex = -1;
+for (let i = 0; i < teachers.length; i++) {
+  if (teachers[i] === 'Lewis') {
+    lewisIndex = i;
+    break;
+  }
+}
+
+8.
+Non utilizza metodi array
+*/
